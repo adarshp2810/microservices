@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-let orders = [{ id: 1, item: 'Laptop' }, { id: 2, item: 'Book' }];
+let orders = [{ id: 1, item: 'Smartphone' }, { id: 2, item: 'Book' }];
 
 app.get('/orders', (req, res) => {
   res.json(orders);
